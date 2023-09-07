@@ -14,12 +14,12 @@
     <body style="background-color: rgb(46,148,250);">
         <center>
             <div style="margin: 300px;"></div>
-            <img src="/home/jx/Documents/hardware e software/git_projects/cat_bank/templates/cat_pilot_uniform.png" style="width: 150px; height: 150px; opacity: 0.9;"> 
-            <form action="/cat_bank/teste.json">
+            <img src="/home/jx/Documents/hardware e software/git_projects/cat_bank/static/cat_pilot_uniform.png" style="width: 150px; height: 150px; opacity: 0.9;"> 
+            <form action="/login" method="POST">
                 <div style="font-size: 23px;" type="text">Name:</div>
-                <input id="input_name" style="margin: 5px;">
+                <input name="username" id="input_name" style="margin: 5px;">
                 <div style="font-size: 23px" type="password">Password:</div>
-                <input type="password" id="password" style="margin: 5px;">
+                <input type="password" name="password" id="password" style="margin: 5px;">
                 <br><br>
                 <button style="height: 30px; width: 60px; color: rgb(0, 0, 0);" id="button_login">
                     Login
