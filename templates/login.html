@@ -14,7 +14,7 @@
     <body style="background-color: rgb(46,148,250);">
         <center>
             <div style="margin: 300px;"></div>
-            <img src="/home/jx/Documents/hardware e software/git_projects/cat_bank/static/cat_pilot_uniform.png" style="width: 150px; height: 150px; opacity: 0.9;"> 
+            <img src="{{url_for('static', filename='cat_pilot_uniform.png')}}" style="width: 150px; height: 150px; opacity: 0.9;"> 
             <form action="/login" method="POST">
                 <div style="font-size: 23px;" type="text">Name:</div>
                 <input name="username" id="input_name" style="margin: 5px;">
@@ -25,8 +25,8 @@
                     Login
                 </button>
             </form>
-            <p>Don't have an account yet?<a href="/home/jx/Documents/hardware e software/git_projects/cat_bank/templates/signin.html" style=" color: rgb(0, 0, 0);"><br>Sign up</a></p>
-            <p></p><a href="/home/jx/Documents/hardware e software/git_projects/cat_bank/templates/forgot_password.html" style=" color: rgb(0, 0, 0);">Forgot password</a></p>
+            <p>Don't have an account yet?<a href="/signup" style=" color: rgb(0, 0, 0);"><br>Sign up</a></p>
+            <p></p><a href="/forgot_password" style=" color: rgb(0, 0, 0);">Forgot password</a></p>
             
             <div></div>
         </center>

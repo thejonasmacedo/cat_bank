@@ -1,10 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Sign Up</title>
         <meta charset="UTF-8">
-        <title>Signin Page</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto">
+        <style>
+            div {
+                font-family: "Roboto";
+            }
+        </style>
     </head>
-    <body>
-        <h1>placeholder signin</h1>
+
+    <body style="background-color: rgb(46,148,250);">
+        <center>
+            <div style="margin: 150px; font-size: 40px;">Conta nova?<br> Crie com facilidade no Cat Bank</div>
+            <!-- <img src="/home/jx/Documents/hardware e software/git_projects/cat_bank/static/cat_thumbs-up.gif" style="width: 150px; height: 150px;">  -->
+            <form action="/login" method="POST">
+                <div style="font-size: 23px;" type="text">Name:</div>
+                <input name="username" id="input_name" style="margin: 7px;">
+                <div style="font-size: 23px" type="password">Password:</div>
+                <input type="password" name="password" id="password" style="margin: 7px;">
+                <div style="font-size: 23px" type="password">Confirm Password:</div>
+                <input type="password" name="confirm_password" id="confirm_password" style="margin: 7px;">                
+                <br><br>
+                <button style="height: 30px; width: 60px; color: rgb(0, 0, 0);" id="button_login">
+                    Sign Up
+                </button>
+            </form>
+            <!-- <p>Don't have an account yet?<a href="/home/jx/Documents/hardware e software/git_projects/cat_bank/templates/signin.html" style=" color: rgb(0, 0, 0);"><br>Sign up</a></p>
+            <p></p><a href="/home/jx/Documents/hardware e software/git_projects/cat_bank/templates/forgot_password.html" style=" color: rgb(0, 0, 0);">Forgot password</a></p>
+             -->
+            <div></div>
+        </center>
+
     </body>
 </html>
