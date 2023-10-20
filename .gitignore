@@ -1,1 +1,11 @@
+# Arquivos e diretórios relacionados à VM do Python
 __pycache__
+*.pyc
+*.pyo
+*.pyd
+*.db
+venv/
+.virtualenv/
+env/
+
+
