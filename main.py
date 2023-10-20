@@ -3,13 +3,13 @@ from os import path
 
 app = Flask(__name__)
 
-picFolder = path.join('satic', 'pics')
+picFolder = path.join('static', 'pics')
 
 app.config['UPLOAD_FOLDER'] = picFolder
 
 @app.route('/')
 def index():
-    return 'site main'
+    return render_template('main.html')
 
 
 
