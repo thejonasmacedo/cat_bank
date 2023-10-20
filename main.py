@@ -21,7 +21,7 @@ def login():
         password = request.form['password']
 
         if username == 'jonas' and password == '1234':
-            return redirect(f'/account/{username}')
+            return redirect('/account')
         else:
             return 'Login Falhou'
 
