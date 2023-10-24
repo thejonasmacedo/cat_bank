@@ -1,14 +1,14 @@
 from flask import Flask, render_template, request, redirect, url_for
-from os import path
+import os
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='../templates', static_folder='../static')
 
-picFolder = path.join('static', 'pics')
+picFolder = os.path.join('static', 'pics')
 
 app.config['UPLOAD_FOLDER'] = picFolder
 
 @app.route('/')
-def index():
+def main():
     return render_template('mainsite.html')
 
 
