@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <meta charset="UTF-8">
+        <title> Catbank - Your money on your paw </title>
+        <style>
+        
+        body {
+            background-color: #1E192C;
+        }
+    
+        hr.style-one {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+        }
+        
+        nav{
+            text-align: center;
+        }
+        .navbar1Whole{
+            position: static;
+            top: 0;
+            text-align: center;
+            /* border-radius: 30px; */
+            padding: 10px 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            align-items: center;
+            background-color: #ffffff;
+            height: 60px
+
+        }
+           
+        a{
+            width: 100%;
+        
+        }
+        .navbar1text{
+            text-align: center;
+            text-decoration: none;
+            text-emphasis-color: red;
+            margin: 15.5px;
+            font-size: 24px;
+            user-select: text;
+            color: rgb(0, 0, 0);
+            height: 30px;
+        }
+        .navbar1text:hover {
+            color: rgb(25, 95, 40);
+        }
+
+        p.aText{
+            color: #ffffff;
+
+        }
+    
+        ul{
+            list-style-type: none;
+        }
+
+        div.divText{
+            margin-left: 10px;
+            margin-right: 10px;
+
+        }
+
+        </style>
+    </head>
+    <body >
+        <nav class="navbar1Whole">
+            <ul>
+                <li>
+                    <a href="/" class="navbar1text">
+                            Home
+                    </a>
+                    <a href="/login" class="navbar1text">
+                            Login
+                    </a>
+                    <a href="/about" class="navbar1text">
+                            About
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="divText">
+            <img src="{{url_for('static', filename='moeda_no_porquinho.png')}}", style="width: 250px;">
+            <img src="{{url_for('static', filename='cliente_no_caixa.png')}}", style="width: 250px;">
+            <p class="aText">
+
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dictum quis diam sit amet auctor. Nullam mattis semper elit, non iaculis neque rhoncus quis. Fusce ut tellus sit amet metus convallis euismod. Morbi id urna fringilla nulla tristique sollicitudin at nec metus. Aliquam erat volutpat. Sed lectus lectus, consequat at nisl at, tincidunt vulputate augue. Vestibulum a est nec elit sagittis viverra viverra id purus. Mauris eu semper nunc, sit amet molestie erat.
+                            
+                Pellentesque commodo molestie tortor, a dapibus felis iaculis in. Mauris fermentum nunc nec mauris rutrum mollis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus porta volutpat erat, eu aliquam ipsum imperdiet quis. Vestibulum sollicitudin scelerisque eleifend. Maecenas non ipsum egestas, gravida felis quis, iaculis lacus. Phasellus rutrum posuere consectetur. Praesent gravida ligula in imperdiet viverra. Integer posuere posuere quam non sollicitudin. Ut porta, libero id mattis tincidunt, mi odio blandit lorem, quis bibendum libero magna at dui. In facilisis diam finibus pretium maximus. Cras quis auctor turpis. Suspendisse cursus sagittis tempus. Fusce sapien metus, semper semper quam quis, aliquam egestas leo.
+                            
+                Fusce fermentum tortor neque. Etiam gravida mi vel massa scelerisque pulvinar. Nunc mollis justo rhoncus congue lobortis. Ut quis nibh ex. Donec interdum diam ut dolor molestie hendrerit. Sed ornare blandit arcu, vel tincidunt libero dapibus in. Sed dignissim ligula nec tortor tincidunt feugiat. Ut scelerisque in lorem vitae tempus. Mauris dictum lacus sed lacinia tempor. Integer eget interdum tortor. Suspendisse fringilla et elit a egestas. Quisque tincidunt vel orci ac finibus. Aliquam vehicula felis libero, et pellentesque dui iaculis vitae. Quisque vitae volutpat augue, id tincidunt velit. Vivamus pulvinar velit libero, sed aliquet ante dignissim sed. Sed ut blandit massa.
+                            
+                Nulla accumsan mauris a elit commodo, sed malesuada ipsum gravida. Nunc ac porta sem, a tincidunt purus. Vivamus maximus lacinia est in tristique. Duis nec venenatis risus. Pellentesque non massa magna. Nunc sit amet tortor at urna elementum tristique. Aenean dictum gravida odio id lacinia. Praesent a tempus dui, quis congue eros. Vestibulum ac ullamcorper tellus, vitae euismod metus. Suspendisse non rutrum ligula. Sed tincidunt nulla erat, eget consequat nisl gravida non. Nam ultrices iaculis lobortis. Sed efficitur est in suscipit auctor.
+                            
+                Aliquam congue ante a velit dignissim tempor. Suspendisse non pulvinar erat. Cras ex diam, molestie sit amet ex ut, varius aliquet purus. Nunc ultricies tempus tortor, at molestie dui volutpat non. Donec lacinia augue turpis, ac tristique ex scelerisque sed. Aenean eget leo id purus suscipit varius quis non metus. Vestibulum ut dolor venenatis, efficitur velit id, iaculis purus. Mauris fermentum ante sit amet blandit euismod. In bibendum sed justo et consectetur. Praesent elementum bibendum arcu et euismod. Quisque vitae vulputate leo, a faucibus mi. Integer pretium lorem a ullamcorper laoreet. Integer porttitor augue eget elementum semper. Etiam aliquam elit ut facilisis ultricies. Vestibulum pretium, lectus quis aliquet hendrerit, massa quam placerat risus, non eleifend nisl libero quis turpis. 
+            </p>
+
+        </div>
+    </body>
+</html>

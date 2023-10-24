@@ -9,7 +9,7 @@ app.config['UPLOAD_FOLDER'] = picFolder
 
 @app.route('/')
 def index():
-    return render_template('main.html')
+    return render_template('mainsite.html')
 
 
 
@@ -57,6 +57,10 @@ def sign_up():
 @app.route('/forgot_password')
 def forgot_password():
     return render_template('forgot_password.html')
+
+@app.route('/about')
+def about():
+    return 'about'
 
 
 

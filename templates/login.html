@@ -38,13 +38,20 @@
                 
                 
             }
+            div.cimaLogin{
+                margin: 280px;
+
+            }
             
+            
+
         </style>
     </head>
 
     <body style="background-color: #303030;">
         <center>
-            <div style="margin: 280px;"></div>
+            
+            <div class="cimaLogin"></div>
             <img src="{{url_for('static', filename='cat_pilot_uniform.png')}}" style="width: 150px; height: 150px; opacity: 0.9;"> 
             <form action="/login" method="POST">
                 <!-- <div style="font-size: 23px;" type="text">Name:</div> -->
@@ -58,7 +65,7 @@
                 </button>
             </form>
             <p style="color:rgb(40, 161, 111)">Don't have an account yet?<a href="/signup" style=" color: rgb(40, 161, 111);"><br>Sign up</a></p>
-            <p></p><a href="/forgot_password" style=" color: rgb(223, 165, 8);">Forgot password</a></p>
+            <p></p><a href="/forgot_password" style=" color: rgb(240, 42, 42);">Forgot password</a></p>
             
             <div></div>
         </center>
