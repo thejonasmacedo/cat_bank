@@ -6,6 +6,18 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
         <meta charset="UTF-8">
+
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
+        <link rel="manifest" href="/static/site.webmanifest">
+        <link rel="mask-icon" href="/static/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        
+        
+
         <title> Catbank - Your money on your paw </title>
         <style>
         
@@ -30,6 +42,8 @@
             padding: 10px 10px;
             margin-left: 10px;
             margin-right: 10px;
+            margin-top: 0;
+            margin-bottom: 20px;
             align-items: center;
             background-color: #ffffff;
             height: 60px
@@ -49,6 +63,7 @@
             user-select: text;
             color: rgb(0, 0, 0);
             height: 30px;
+
         }
         .navbar1text:hover {
             color: rgb(25, 95, 40);
@@ -59,10 +74,11 @@
             text-decoration: none;
             text-emphasis-color: red;
             margin: 10px;
-            font-size: 20px;
+            font-size: 30px;
             user-select: text;
             color: #463180;
             height: 20px;
+            vertical-align: middle;
         }
         .navbar2text:hover {
             color: rgb(25, 95, 40);
@@ -70,8 +86,9 @@
 
         p.aText{
             color: #ffffff;
-            font-size: 17px;
+            font-size: 23px;
             font-family: "Roboto";
+            padding: 10px;
 
         }
         p.aTextBlack{
@@ -83,7 +100,7 @@
         }
         p.aTextBox{
             color: #000000;
-            font-size: 15.6px;
+            font-size: 19.6px;
             font-family: "Roboto";
             margin: 0;
             
@@ -92,7 +109,7 @@
         p.aTextBoxTitle{
             font-weight: bold;
             color: #000000;
-            font-size: 18px;
+            font-size: 25px;
             font-family: "Roboto";
             margin: 0;
             
@@ -101,13 +118,18 @@
         
 
         .listTitle{
-            font-size: 20px;
+            font-size: 27px;
         }
         .subTitle{
             color: #ffffff;
             font-size: 40px;
             font-family: "Roboto"
 
+        }
+        .bottonText {
+            color: #ffffff;
+            font-size: 15px;
+            font-family: "Roboto"
         }
         
         lu{
@@ -121,8 +143,8 @@
         }
 
         div.divText{
-            margin-left: 10px;
-            margin-right: 10px;
+            margin-left: 50px;
+            margin-right: 50px;
             padding: 20px;
 
         }
@@ -133,6 +155,7 @@
             background-size: cover;
             background-repeat: no-repeat;
             margin-bottom: 50px;
+            border-radius: 15px;
         }
 
         .divBackground2{
@@ -141,13 +164,17 @@
             background-size: cover;
             background-repeat: no-repeat;
             margin-bottom: 50px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: space-between;
+            padding: 100px;
         }
         .divInnerImageWhiteBackground{
             background: white;
         }
         .divBox {
-            width: 300px;
-            height: 280px;
+            width: 400px;
+            height: 380px;
             background-color: white;
             border-radius: 15px;
             margin: 10px;
@@ -166,12 +193,24 @@
 
         }
 
+        img.logo{
+            margin-left:auto;
+            height: 50px;
+            float: left;
+            mix-blend-mode: multiply;
+            height: 50px;
+            vertical-align: middle;
+        }
+
         </style>
     </head>
     <body >
         <nav class="navbar1Whole">
+            
+
             <ul>
                 <li>
+                    
                     <a href="/" class="navbar1text">
                             Home
                     </a>
@@ -237,92 +276,43 @@
                         <p class="aTextBoxTitle">
                             Empréstimo
                         </p>
-                        <p class="aTextBox">
+                        <p class="aTextBox" style="margin-bottom: 10px;"">
                             No CatBank, acreditamos que cada cliente é único, e suas necessidades financeiras também. É por isso que oferecemos empréstimos personalizados, adaptados às suas circunstâncias individuais. Conte conosco para encontrar a melhor oferta de empréstimo que atenda às suas necessidades.                        
                         </p>
-                        <a class="navbar2text">
+                        <a class="navbar2text" href="/loan">
                             Saiba Mais
                         </a>
 
                     </div>
 
                     <div class='divBox'>
-                        <p class="aTextBoxTitle" href="">
+                        <p class="aTextBoxTitle">
                             Financiamento
                         </p>
-                        <p class="aTextBox">
+                        <p class="aTextBox" style="margin-bottom: 40px;">
                             No CatBank, compreendemos que a vida é repleta de oportunidades e desafios que muitas vezes exigem suporte financeiro. É por isso que oferecemos financiamentos versáteis para nossos clientes. Seja para comprar sua primeira casa, investir em educação ou iniciar um novo empreendimento.                        
                         </p>
-                        <a class="navbar2text" href="">
+                        <a class="navbar2text" href="/financing">
                             Saiba Mais
                         </a>
 
                     </div>
                     
                     <div class='divBox'>
-                        <p class="aTextBoxTitle" href="">
-                            Financiamento
+                        <p class="aTextBoxTitle">
+                            Investimentos
                         </p>
-                        <p class="aTextBox">
-                            No CatBank, compreendemos que a vida é repleta de oportunidades e desafios que muitas vezes exigem suporte financeiro. É por isso que oferecemos financiamentos versáteis para nossos clientes. Seja para comprar sua primeira casa, investir em educação ou iniciar um novo empreendimento.                        
+                        <p class="aTextBox" style="margin-bottom: 10px;">
+                            No CatBank, sabemos que cada cliente é único e tem objetivos financeiros distintos. É por isso que oferecemos uma ampla gama de oportunidades de investimento para atender às diversas necessidades de nossa clientela. Desde investimentos tradicionais até os mais modernos, estamos aqui para ajudá-lo a potencializar seu patrimônio.                        
                         </p>
-                        <a class="navbar2text" href="">
+                        <a class="navbar2text" href="/investments">
                             Saiba Mais
                         </a>
 
                     </div>
                 </div>
-
-                <img src="{{url_for('static', filename='mercado_crypto.jpg')}}", style="width: 250px;">
-                <p class="aText">
-
-
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dictum quis diam sit amet auctor. Nullam mattis semper elit, non iaculis neque rhoncus quis. Fusce ut tellus sit amet metus convallis euismod. Morbi id urna fringilla nulla tristique sollicitudin at nec metus. Aliquam erat volutpat. Sed lectus lectus, consequat at nisl at, tincidunt vulputate augue. Vestibulum a est nec elit sagittis viverra viverra id purus. Mauris eu semper nunc, sit amet molestie erat.
-
-                    Pellentesque commodo molestie tortor, a dapibus felis iaculis in. Mauris fermentum nunc nec mauris rutrum mollis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus porta volutpat erat, eu aliquam ipsum imperdiet quis. Vestibulum sollicitudin scelerisque eleifend. Maecenas non ipsum egestas, gravida felis quis, iaculis lacus. Phasellus rutrum posuere consectetur. Praesent gravida ligula in imperdiet viverra. Integer posuere posuere quam non sollicitudin. Ut porta, libero id mattis tincidunt, mi odio blandit lorem, quis bibendum libero magna at dui. In facilisis diam finibus pretium maximus. Cras quis auctor turpis. Suspendisse cursus sagittis tempus. Fusce sapien metus, semper semper quam quis, aliquam egestas leo.
-
-                    Fusce fermentum tortor neque. Etiam gravida mi vel massa scelerisque pulvinar. Nunc mollis justo rhoncus congue lobortis. Ut quis nibh ex. Donec interdum diam ut dolor molestie hendrerit. Sed ornare blandit arcu, vel tincidunt libero dapibus in. Sed dignissim ligula nec tortor tincidunt feugiat. Ut scelerisque in lorem vitae tempus. Mauris dictum lacus sed lacinia tempor. Integer eget interdum tortor. Suspendisse fringilla et elit a egestas. Quisque tincidunt vel orci ac finibus. Aliquam vehicula felis libero, et pellentesque dui iaculis vitae. Quisque vitae volutpat augue, id tincidunt velit. Vivamus pulvinar velit libero, sed aliquet ante dignissim sed. Sed ut blandit massa.
-
-                    Nulla accumsan mauris a elit commodo, sed malesuada ipsum gravida. Nunc ac porta sem, a tincidunt purus. Vivamus maximus lacinia est in tristique. Duis nec venenatis risus. Pellentesque non massa magna. Nunc sit amet tortor at urna elementum tristique. Aenean dictum gravida odio id lacinia. Praesent a tempus dui, quis congue eros. Vestibulum ac ullamcorper tellus, vitae euismod metus. Suspendisse non rutrum ligula. Sed tincidunt nulla erat, eget consequat nisl gravida non. Nam ultrices iaculis lobortis. Sed efficitur est in suscipit auctor.
-
-                    Aliquam congue ante a velit dignissim tempor. Suspendisse non pulvinar erat. Cras ex diam, molestie sit amet ex ut, varius aliquet purus. Nunc ultricies tempus tortor, at molestie dui volutpat non. Donec lacinia augue turpis, ac tristique ex scelerisque sed. Aenean eget leo id purus suscipit varius quis non metus. Vestibulum ut dolor venenatis, efficitur velit id, iaculis purus. Mauris fermentum ante sit amet blandit euismod. In bibendum sed justo et consectetur. Praesent elementum bibendum arcu et euismod. Quisque vitae vulputate leo, a faucibus mi. Integer pretium lorem a ullamcorper laoreet. Integer porttitor augue eget elementum semper. Etiam aliquam elit ut facilisis ultricies. Vestibulum pretium, lectus quis aliquet hendrerit, massa quam placerat risus, non eleifend nisl libero quis turpis. 
-                </p>
-
-                <img src="{{url_for('static', filename='planta_no_dinheiro.jpg')}}", style="width: 250px;">
-                <p class="aText">
-
-
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dictum quis diam sit amet auctor. Nullam mattis semper elit, non iaculis neque rhoncus quis. Fusce ut tellus sit amet metus convallis euismod. Morbi id urna fringilla nulla tristique sollicitudin at nec metus. Aliquam erat volutpat. Sed lectus lectus, consequat at nisl at, tincidunt vulputate augue. Vestibulum a est nec elit sagittis viverra viverra id purus. Mauris eu semper nunc, sit amet molestie erat.
-
-                    Pellentesque commodo molestie tortor, a dapibus felis iaculis in. Mauris fermentum nunc nec mauris rutrum mollis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus porta volutpat erat, eu aliquam ipsum imperdiet quis. Vestibulum sollicitudin scelerisque eleifend. Maecenas non ipsum egestas, gravida felis quis, iaculis lacus. Phasellus rutrum posuere consectetur. Praesent gravida ligula in imperdiet viverra. Integer posuere posuere quam non sollicitudin. Ut porta, libero id mattis tincidunt, mi odio blandit lorem, quis bibendum libero magna at dui. In facilisis diam finibus pretium maximus. Cras quis auctor turpis. Suspendisse cursus sagittis tempus. Fusce sapien metus, semper semper quam quis, aliquam egestas leo.
-
-                    Fusce fermentum tortor neque. Etiam gravida mi vel massa scelerisque pulvinar. Nunc mollis justo rhoncus congue lobortis. Ut quis nibh ex. Donec interdum diam ut dolor molestie hendrerit. Sed ornare blandit arcu, vel tincidunt libero dapibus in. Sed dignissim ligula nec tortor tincidunt feugiat. Ut scelerisque in lorem vitae tempus. Mauris dictum lacus sed lacinia tempor. Integer eget interdum tortor. Suspendisse fringilla et elit a egestas. Quisque tincidunt vel orci ac finibus. Aliquam vehicula felis libero, et pellentesque dui iaculis vitae. Quisque vitae volutpat augue, id tincidunt velit. Vivamus pulvinar velit libero, sed aliquet ante dignissim sed. Sed ut blandit massa.
-
-                    Nulla accumsan mauris a elit commodo, sed malesuada ipsum gravida. Nunc ac porta sem, a tincidunt purus. Vivamus maximus lacinia est in tristique. Duis nec venenatis risus. Pellentesque non massa magna. Nunc sit amet tortor at urna elementum tristique. Aenean dictum gravida odio id lacinia. Praesent a tempus dui, quis congue eros. Vestibulum ac ullamcorper tellus, vitae euismod metus. Suspendisse non rutrum ligula. Sed tincidunt nulla erat, eget consequat nisl gravida non. Nam ultrices iaculis lobortis. Sed efficitur est in suscipit auctor.
-
-                    Aliquam congue ante a velit dignissim tempor. Suspendisse non pulvinar erat. Cras ex diam, molestie sit amet ex ut, varius aliquet purus. Nunc ultricies tempus tortor, at molestie dui volutpat non. Donec lacinia augue turpis, ac tristique ex scelerisque sed. Aenean eget leo id purus suscipit varius quis non metus. Vestibulum ut dolor venenatis, efficitur velit id, iaculis purus. Mauris fermentum ante sit amet blandit euismod. In bibendum sed justo et consectetur. Praesent elementum bibendum arcu et euismod. Quisque vitae vulputate leo, a faucibus mi. Integer pretium lorem a ullamcorper laoreet. Integer porttitor augue eget elementum semper. Etiam aliquam elit ut facilisis ultricies. Vestibulum pretium, lectus quis aliquet hendrerit, massa quam placerat risus, non eleifend nisl libero quis turpis. 
-                </p>
-
-                <img src="{{url_for('static', filename='assinando_papeis.jpg')}}", style="width: 250px;">
-                <p class="aText">
-
-
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dictum quis diam sit amet auctor. Nullam mattis semper elit, non iaculis neque rhoncus quis. Fusce ut tellus sit amet metus convallis euismod. Morbi id urna fringilla nulla tristique sollicitudin at nec metus. Aliquam erat volutpat. Sed lectus lectus, consequat at nisl at, tincidunt vulputate augue. Vestibulum a est nec elit sagittis viverra viverra id purus. Mauris eu semper nunc, sit amet molestie erat.
-
-                    Pellentesque commodo molestie tortor, a dapibus felis iaculis in. Mauris fermentum nunc nec mauris rutrum mollis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus porta volutpat erat, eu aliquam ipsum imperdiet quis. Vestibulum sollicitudin scelerisque eleifend. Maecenas non ipsum egestas, gravida felis quis, iaculis lacus. Phasellus rutrum posuere consectetur. Praesent gravida ligula in imperdiet viverra. Integer posuere posuere quam non sollicitudin. Ut porta, libero id mattis tincidunt, mi odio blandit lorem, quis bibendum libero magna at dui. In facilisis diam finibus pretium maximus. Cras quis auctor turpis. Suspendisse cursus sagittis tempus. Fusce sapien metus, semper semper quam quis, aliquam egestas leo.
-
-                    Fusce fermentum tortor neque. Etiam gravida mi vel massa scelerisque pulvinar. Nunc mollis justo rhoncus congue lobortis. Ut quis nibh ex. Donec interdum diam ut dolor molestie hendrerit. Sed ornare blandit arcu, vel tincidunt libero dapibus in. Sed dignissim ligula nec tortor tincidunt feugiat. Ut scelerisque in lorem vitae tempus. Mauris dictum lacus sed lacinia tempor. Integer eget interdum tortor. Suspendisse fringilla et elit a egestas. Quisque tincidunt vel orci ac finibus. Aliquam vehicula felis libero, et pellentesque dui iaculis vitae. Quisque vitae volutpat augue, id tincidunt velit. Vivamus pulvinar velit libero, sed aliquet ante dignissim sed. Sed ut blandit massa.
-
-                    Nulla accumsan mauris a elit commodo, sed malesuada ipsum gravida. Nunc ac porta sem, a tincidunt purus. Vivamus maximus lacinia est in tristique. Duis nec venenatis risus. Pellentesque non massa magna. Nunc sit amet tortor at urna elementum tristique. Aenean dictum gravida odio id lacinia. Praesent a tempus dui, quis congue eros. Vestibulum ac ullamcorper tellus, vitae euismod metus. Suspendisse non rutrum ligula. Sed tincidunt nulla erat, eget consequat nisl gravida non. Nam ultrices iaculis lobortis. Sed efficitur est in suscipit auctor.
-
-                    Aliquam congue ante a velit dignissim tempor. Suspendisse non pulvinar erat. Cras ex diam, molestie sit amet ex ut, varius aliquet purus. Nunc ultricies tempus tortor, at molestie dui volutpat non. Donec lacinia augue turpis, ac tristique ex scelerisque sed. Aenean eget leo id purus suscipit varius quis non metus. Vestibulum ut dolor venenatis, efficitur velit id, iaculis purus. Mauris fermentum ante sit amet blandit euismod. In bibendum sed justo et consectetur. Praesent elementum bibendum arcu et euismod. Quisque vitae vulputate leo, a faucibus mi. Integer pretium lorem a ullamcorper laoreet. Integer porttitor augue eget elementum semper. Etiam aliquam elit ut facilisis ultricies. Vestibulum pretium, lectus quis aliquet hendrerit, massa quam placerat risus, non eleifend nisl libero quis turpis. 
-                </p>
-
+                
                 <img src="{{url_for('static', filename='cartao_de_credito.jpg')}}", style="width: 250px;">
-
-
-
-
                 <p class="aText">
 
 
@@ -337,6 +327,8 @@
                     Aliquam congue ante a velit dignissim tempor. Suspendisse non pulvinar erat. Cras ex diam, molestie sit amet ex ut, varius aliquet purus. Nunc ultricies tempus tortor, at molestie dui volutpat non. Donec lacinia augue turpis, ac tristique ex scelerisque sed. Aenean eget leo id purus suscipit varius quis non metus. Vestibulum ut dolor venenatis, efficitur velit id, iaculis purus. Mauris fermentum ante sit amet blandit euismod. In bibendum sed justo et consectetur. Praesent elementum bibendum arcu et euismod. Quisque vitae vulputate leo, a faucibus mi. Integer pretium lorem a ullamcorper laoreet. Integer porttitor augue eget elementum semper. Etiam aliquam elit ut facilisis ultricies. Vestibulum pretium, lectus quis aliquet hendrerit, massa quam placerat risus, non eleifend nisl libero quis turpis. 
                 </p>
 
+                <hr style="background-color: white; width: 70%;">
+                <p class="bottonText">Contato</p>
             </div>
         </center>
     </body>

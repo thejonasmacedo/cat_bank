@@ -13,6 +13,27 @@ def main():
 
 
 
+#In Dev
+@app.route('/loan')
+def loan():
+    return 'loan'
+
+#In Dev
+@app.route('/financing')
+def financing():
+    return 'financing'
+
+#In Dev
+@app.route('/investments')
+def investments():
+    return 'investments'
+
+
+
+
+
+
+
 @app.route('/login', methods=['GET','POST'])
 def login():
     if request.method == 'POST':
@@ -21,7 +42,7 @@ def login():
         password = request.form['password']
 
         if username == 'jonas' and password == '1234':
-            return redirect('/account')
+            return redirect('/account/<username>')
         else:
             return 'Login Falhou'
 
